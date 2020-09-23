@@ -21,6 +21,8 @@ threshold = 0.25
 face_database = {}
 
 for name in os.listdir('Agu_images'):
+	if(name=='README.md'):
+		continue
 	for image in os.listdir(os.path.join('Agu_images',name)):
 		identity = os.path.splitext(os.path.basename(image))[0]
 		face_database[identity] = Lib.fr_utils.img_path_to_encoding(os.path.join('Agu_images',name,image), FR_model)
