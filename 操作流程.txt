@@ -1,0 +1,12 @@
+擷取臉部影像
+step1:在dataset資料夾下建立自己名子資料夾
+step2:python Image_Generator/Take_Photo.py
+(q按鍵為停止程式)
+step3:針對臉部影像進行擷取
+
+臉部影像增強
+step4:python Image_Generator/process.py
+(Agu_image會產生新的子資料夾及影像)
+執行臉部辨識
+step5:python face_recognizer.py
+(q按鍵為停止程式)
